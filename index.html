@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> body{
+        background-color: #348322 ;
+        background-image: url(../post1.jpg); 
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: top center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed;
+    }
+    .qPanel{
+        margin:auto;
+        width:800px;
+        vertical-align: center;
+        margin:0 auto;
+        background-color: #79B96A ;
+        border: none ;
+        border-radius : 10px ;
+        padding: 20px ;
+        height: 160px ;
+        font-size: 15pt;
+    }
+    .ques{
+        font-size : 18pt;
+        font-weight: bold ;
+        color: #79B96A ;
+    }
+    .nxtBtn{
+        position: relative ;
+        right : 10px ;
+        float: right;
+        border:none ;
+        font-size: 18pt ;
+        background-color: #348322  ;
+        color: #ffffff ;
+        width: 80px ;
+        height: 35px ;
+    }
+    </style>
+    </head>
+    <body>
+        <br/><br/><br/>
+        <div class="qPanel">
+            <div style="font-size:20pt;">Quiz</div>
+             <div class="ques" id="question"> 
+             </div>
+             <div><input type="radio" id="opt1" name="options">
+                <span id="optt1"></span>
+            </div>
+            <div><input type="radio" id="opt2" name="options">
+                <span id="optt2"></span>
+            </div>
+            <div><input type="radio" id="opt3" name="options">
+                <span id="optt3"></span>
+            </div>
+            <div class="lftCss">
+            <button class="nxtBtn" onclick="checkAnswer()">next ></button>
+            </div>
+        </div>
+        <script src="data.js"></script>
+        <script src="index.js"></script>
+    </body>
+    </html>
